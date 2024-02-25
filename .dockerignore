@@ -1,0 +1,25 @@
+# Ignore temporary files
+.DS_Store
+.vscode/
+*.pyc
+
+# Ignore version control system directories
+.git/
+.svn/
+
+# Ignore logs and other runtime data
+*.log
+*.pid
+
+# Ignore dependency directories
+node_modules/
+venv/
+
+# Ignore compiled code or binaries
+*.o
+*.class
+
+# Ignore system-specific files
+.idea/
+.vs/
+*.swp
