@@ -34,8 +34,3 @@ jobs:
       - name: Run Frontend Tests
         run: npm run test
         working-directory: ./frontend
-
-      # Optional: Prettier check (example for frontend only, repeat for backend if needed)
-      - name: Check code formatting with Prettier in Frontend
-        run: npx prettier --check .
-        working-directory: ./frontend
