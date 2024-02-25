@@ -21,7 +21,7 @@ The project is divided into two main parts:
 ### Clone the Repository
 
 ```
-git clone https://github.com/your-username/your-project-name.git
+git clone https://github.com/siwhelan/MERN-Template.git
 cd your-project-name
 ```
 
@@ -112,7 +112,7 @@ To run the project using Docker, make sure you have Docker installed on your sys
 1. Clone the Repository
 
    ```
-   git clone https://github.com/your-username/your-project-name.git
+   git clone https://github.com/siwhelan/MERN-Template.git
    cd your-project-name
    ```
 
