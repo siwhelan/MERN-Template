@@ -39,7 +39,7 @@ cd api
 npm install
 ```
 
-### Create a .env file in the api directory with the following content, adjusted to your MongoDB setup:
+Create a .env file in the api directory with the following content, adjusted to your MongoDB setup:
 
 ```
 PORT=5000
@@ -47,7 +47,7 @@ MONGODB_URI=mongodb://localhost:27017/myDatabase
 JWT_SECRET=your_jwt_secret_here
 ```
 
-### Create a .env.test file in the api directory with the following content, adjusted to your MongoDB setup:
+Create a .env.test file in the api directory with the following content, adjusted to your MongoDB setup:
 
 ```
 MONGODB_URI=mongodb://localhost:27017/test-db
