@@ -1,0 +1,29 @@
+# Dependency directories
+/node_modules/
+
+# Environment files
+.env
+.env.local
+.env.test
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/dist/
+/build/
+/coverage/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Next.js
+/.next/
+/out/
+
+# Static files
+/public/
+
+# Config files
+/.firebase/
