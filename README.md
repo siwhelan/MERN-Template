@@ -1,4 +1,4 @@
-# Introduction
+# Project Overview
 
 This project is a full-stack MERN application, combining a React frontend with an Express backend, MongoDB for data persistence, and Node.js for the server environment. It's designed to offer a quick start template for developing scalable web applications. This README provides instructions on setting up the project, including environment configuration and operational guidance.
 
@@ -6,15 +6,15 @@ This project is a full-stack MERN application, combining a React frontend with a
 
 The project is divided into two main parts:
 
-frontend: Contains the React application, configured with Vite for fast development and builds, and styled using TailwindCSS.
-api: The backend part of the project, built with Express and connected to MongoDB through Mongoose. It includes a testing setup with Jest.
-Prerequisites
+- **frontend**: Contains the React application, configured with Vite for fast development and builds, and styled using TailwindCSS.
+- **api**: The backend part of the project, built with Express and connected to MongoDB through Mongoose. It includes a testing setup with Jest.
 
-Node.js (version 18.x or higher recommended)
+## Prerequisites
 
-MongoDB (local installation or cloud-based service like MongoDB Atlas)
-
-npm (comes with Node.js)
+- Node.js (version 18.x or higher recommended)
+- MongoDB (local installation or cloud-based service like MongoDB Atlas)
+- npm (comes with Node.js)
+- Docker (for containerization)
 
 ## Installation
 
@@ -104,6 +104,38 @@ npm test
 ```
 npm run build
 ```
+
+### Docker Setup
+
+To run the project using Docker, make sure you have Docker installed on your system.
+
+1. Clone the Repository
+
+   ```
+   git clone https://github.com/your-username/your-project-name.git
+   cd your-project-name
+   ```
+
+2. Build and Start Docker Containers
+   Run the following command in the project root directory:
+
+   ```
+   docker-compose up
+   ```
+
+   This command will build and start Docker containers for the backend, frontend, and database services defined in the docker-compose.yml file.
+
+3. Accessing Services
+
+   Backend: Access the backend API at http://localhost:5000.
+
+   Frontend: Access the frontend application at http://localhost:80.
+
+   Database: The MongoDB database is accessible internally by other services within the Docker network.
+
+4. Stopping Docker Containers
+
+   To stop the running Docker containers, press Ctrl + C in the terminal where docker-compose up is running.
 
 ## Continuous Integration
 
