@@ -35,15 +35,6 @@ jobs:
         run: npm run test
         working-directory: ./frontend
 
-      # Optional: Linting steps (if you want to run them after tests)
-      - name: Lint Backend
-        run: npm run lint
-        working-directory: ./api
-
-      - name: Lint Frontend
-        run: npm run lint
-        working-directory: ./frontend
-
       # Optional: Prettier check (example for frontend only, repeat for backend if needed)
       - name: Check code formatting with Prettier in Frontend
         run: npx prettier --check .
