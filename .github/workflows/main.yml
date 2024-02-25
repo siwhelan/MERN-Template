@@ -17,12 +17,34 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Install backend dependencies
+      # Backend steps
       - name: Install Backend Dependencies
         run: npm ci
         working-directory: ./api
 
-      # Install frontend dependencies
+      - name: Run Backend Tests
+        run: npm test
+        working-directory: ./api
+
+      # Frontend steps
       - name: Install Frontend Dependencies
         run: npm ci
+        working-directory: ./frontend
+
+      - name: Run Frontend Tests
+        run: npm run test
+        working-directory: ./frontend
+
+      # Optional: Linting steps (if you want to run them after tests)
+      - name: Lint Backend
+        run: npm run lint
+        working-directory: ./api
+
+      - name: Lint Frontend
+        run: npm run lint
+        working-directory: ./frontend
+
+      # Optional: Prettier check (example for frontend only, repeat for backend if needed)
+      - name: Check code formatting with Prettier in Frontend
+        run: npx prettier --check .
         working-directory: ./frontend
